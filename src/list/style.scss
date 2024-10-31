@@ -1,0 +1,205 @@
+/**
+ * The following styles get applied both editor & frontend.
+ */
+@import "../scss/pagination.scss";
+@import "../scss/post-list-vars";
+
+.wp-block-post-designer-list {
+	.pd-card-row {
+		display: grid;
+		a {
+			text-decoration: none !important;
+		}
+		&.pd-1-col {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 10px;
+		}
+		&.pd-1-col {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 10px;
+		}
+		&.pd-2-col {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 10px;
+		}
+		&.pd-3-col {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+		}
+		&.pd-4-col {
+			grid-template-columns: repeat(4, 4fr);
+			gap: 10px;
+		}
+		&.pd-5-col {
+			grid-template-columns: repeat(5, 1fr);
+			gap: 10px;
+		}
+		&.pd-6-col {
+			grid-template-columns: repeat(6, 1fr);
+			gap: 10px;
+		}
+		&.pd-7-col {
+			grid-template-columns: repeat(7, 1fr);
+			gap: 10px;
+		}
+		&.pd-8-col {
+			grid-template-columns: repeat(8, 1fr);
+			gap: 10px;
+		}
+		&.pd-9-col {
+			grid-template-columns: repeat(9, 1fr);
+			gap: 10px;
+		}
+		&.pd-10-col {
+			grid-template-columns: repeat(10, 1fr);
+			gap: 10px;
+		}
+		.pd-card {
+			border: var(--pd-list-card-border) solid #e3e3e3;
+			border-radius: var(--pd-list-card-border-radius);
+			background-color: var(--pd-list-card-background-color) !important;
+			& img {
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			.pd-card-body {
+				.pd-post-title {
+					margin: 20px 0px !important;
+					a {
+						color: var(--pd-list-title-color) !important;
+						padding: var(--pd-list-title-padding) !important;
+						font-size: var(--pd-list-title-font-size) !important;
+					}
+				}
+				padding: 10px;
+				.pd-post-categories {
+					display: flex;
+					column-gap: 10px;
+				}
+				.pd-post-meta,
+				.pd-post-categories,
+				.pd-post-categories a {
+					font-style: italic;
+					font-size: 13px;
+				}
+				.pd-post-categories a:not(last-child) {
+					padding-right: 5px;
+				}
+				.pd-post-meta {
+					.pd-post-meta-key {
+						color: var(--pd-list-meta-key-color) !important;
+						font-size: var(--pd-list-meta-key-font-size) !important;
+					}
+					.pd-post-meta-value {
+						color: var(--pd-list-meta-value-color) !important;
+						font-size: var(--pd-list-meta-value-font-size) !important;
+					}
+				}
+				.pd-post-categories {
+					.pd-post-category-key {
+						color: var(--pd-list-category-label-color) !important;
+						font-size: var(--pd-list-category-label-font-size) !important;
+					}
+					.pd-post-category-value {
+						a {
+							color: var(--pd-list-category-value-color) !important;
+							font-size: var(--pd-list-category-value-font-size) !important;
+						}
+					}
+					div {
+						display: flex;
+						flex-wrap: wrap;
+					}
+				}
+				.pd-post-content {
+					margin: 20px 0px !important;
+					p {
+						color: var(--pd-list-excerpt-color) !important;
+						font-size: var(--pd-list-excerpt-font-size) !important;
+						a {
+							color: var(--pd-list-read-more-color) !important;
+							font-size: var(--pd-list-read-more-font-size) !important;
+						}
+					}
+				}
+			}
+			.pd-card-footer {
+				padding: 10px;
+			}
+			.pd-post-author {
+				display: flex;
+				column-gap: 20px;
+			}
+			.pd-post-author img {
+				max-width: var(--pd-list-avatar-size) !important;
+				max-height: var(--pd-list-avatar-size) !important;
+				border-top: var(--pd-list-avatar-border-top) !important;
+				border-left: var(--pd-list-avatar-border-left) !important;
+				border-right: var(--pd-list-avatar-border-right) !important;
+				border-bottom: var(--pd-list-avatar-border-bottom) !important;
+				border-radius: var(--pd-list-avatar-border-radius) !important;
+			}
+			.pd-post-author-info {
+				strong {
+					color: var(--pd-list-author-name-color) !important;
+					font-size: var(--pd-list-author-name-font-size) !important;
+				}
+			}
+		}
+		.pd-ratio-16x9 {
+			padding-top: 56.25%;
+			img {
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		.pd-ratio {
+			content: " ";
+			position: relative;
+			width: 100%;
+			display: block;
+		}
+		.pd-ratio > * {
+			position: absolute !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+
+	.Select.is-open {
+		z-index: 1000 !important;
+	}
+
+	.pd-wc-product-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		border-top: 1px solid #e3e3e3;
+		form, .woocommerce-variation-add-to-cart {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 10px;
+		}
+		input {
+			max-width: 50px !important;
+		}
+		table {
+			display: none;
+		}
+	}
+}
+
+.pd-gb-label {
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}

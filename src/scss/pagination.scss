@@ -1,0 +1,33 @@
+.pd-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    a {
+      text-decoration: none !important;
+    }
+    a, span {
+      padding: 5px 10px;
+      border: none;
+      background-color: #f4f4f4;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #e6e6e6;
+      }
+  
+      &.page-numbers.current {
+        background-color: #2569f0;
+        color: #f4f4f4;
+        cursor: default !important;
+      }
+  
+      &.prev.page-numbers {
+        margin-right: 10px;
+      }
+  
+      &.next.page-numbers {
+        margin-left: 10px;
+      }
+    }
+  }
+  

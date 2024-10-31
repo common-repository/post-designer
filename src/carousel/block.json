@@ -1,0 +1,265 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "post-designer/carousel",
+	"version": "0.1.0",
+	"title": "Post Carousel",
+	"category": "post-designer",
+	"description": "Transform your WordPress posts into stunning showcases with  Post Carousel block!",
+	"supports": {
+		"html": false
+	},
+	"example": {},
+	"textdomain": "blocky",
+	"attributes": {
+		"postType": {
+			"type": "string",
+			"default" : "post"
+		},
+		"authors": {
+			"type": "array",
+			"default": []
+		},
+		"postPerPage": {
+			"type": "string",
+			"default": 3
+		},
+		"noPagination": {
+			"type": "boolean",
+			"default": true
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "ID"
+		},
+		"order": {
+			"type": "string",
+			"default": "DESC"
+		},
+		"taxonomies": {
+			"type": "array",
+			"default": []
+		},
+		"taxonomy": {
+			"type": "string",
+			"default": ""
+		},
+		"terms": {
+			"type": "string",
+			"default": []
+		},
+		"selectedTerms": {
+			"type": "array",
+			"default": []
+		},
+		"dateFrom": {
+			"type": "string",
+			"default": ""
+		},
+		"dateTo": {
+			"type": "string",
+			"default": ""
+		},
+		"layout": {
+			"type": "string",
+			"default": "card"
+		},
+		"dots": {
+			"type": "boolean",
+			"default": true
+		},
+		"infinite": {
+			"type": "boolean",
+			"default": true
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": true
+		},
+		"centerMode": {
+			"type": "boolean",
+			"default": false
+		},
+		"speed": {
+			"type": "boolean",
+			"default": 500
+		},
+		"slidesToScroll": {
+			"type": "number",
+			"default": 1
+		},
+		"arrows": {
+			"type": "boolean",
+			"default": true
+		},
+		"focusOnSelect": {
+			"type": "boolean",
+			"default": false
+		},
+		"initialSlide": {
+			"type": "string",
+			"default": "0"
+		},
+		"rtl": {
+			"type": "boolean",
+			"default": false
+		},
+		"cardBackgroundColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"cardBorder": {
+			"type": "number",
+			"default": 1
+		},
+		"cardBorderRadius": {
+			"type": "number",
+			"default": 10
+		},
+		"showThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"showTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"titlePadding": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"left": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			}
+		},
+		"titleFontSize": {
+			"type": "number",
+			"default": 24
+		},
+		"showMeta": {
+			"type": "boolean",
+			"default": true
+		},
+		"metaKeyColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"metaKeyFontSize": {
+			"type": "number",
+			"default": 12
+		},
+		"metaValueColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"metaValueFontSize": {
+			"type": "number",
+			"default": 12
+		},
+		"showCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"categoryLabelColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"categoryLabelFontSize": {
+			"type": "number",
+			"default": 12
+		},
+		"categoryValueColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"categoryValueFontSize": {
+			"type": "number",
+			"default": 12
+		},
+		"showExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"excerptLength": {
+			"type": "number",
+			"default": 20
+		},
+		"excerptColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"excerptFontSize": {
+			"type": "number",
+			"default": 14
+		},
+		"readMoreColor": {
+			"type": "string",
+			"default": "#037fff"
+		},
+		"readMoreFontSize": {
+			"type": "number",
+			"default": 12
+		},
+		"readMoreText": {
+			"type": "string",
+			"default": "Read More..."
+		},
+		"showAvatar": {
+			"type": "boolean",
+			"default": true
+		},
+		"avatarSize": {
+			"type": "number",
+			"default": 50
+		},
+		"avatarBorder": {
+			"type": "object",
+			"default": {
+				"top": {
+					"width": "1px",
+					"style": "solid",
+					"color": "#e3e3e3"
+				},
+				"left": {
+					"width": "1px",
+					"style": "solid",
+					"color": "#e3e3e3"
+				},
+				"right": {
+					"width": "1px",
+					"style": "solid",
+					"color": "#e3e3e3"
+				},
+				"bottom": {
+					"width": "1px",
+					"style": "solid",
+					"color": "#e3e3e3"
+				}
+			}
+		},
+		"avatarBorderRadius": {
+			"type": "number",
+			"default": 100
+		},
+		"showAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"authorNameColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"authorNameFontSize": {
+			"type": "number",
+			"default": 14
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
